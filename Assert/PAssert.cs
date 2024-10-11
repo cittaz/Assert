@@ -2,22 +2,14 @@
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace Assert;
+namespace PAssert;
 
-public static class Assert
+public static class PAssert
 {
-    public static void Equal(string expected, string actual)
-    {
-        if (expected != actual)
-        {
-            throw new Exception($"Expected: {expected}, Actual: {actual}");
-        }
-    }
-
     public static void Ensure(
-        [DoesNotReturnIf(false)] bool condition,
-        [CallerArgumentExpression(nameof(condition))] string? message = null
-    )
+            [DoesNotReturnIf(false)] bool condition,
+            [CallerArgumentExpression(nameof(condition))] string? message = null
+        )
     {
         if (!condition)
         {
