@@ -11,6 +11,7 @@
     <RepositoryUrl>https://github.com/cittaz/Assert</RepositoryUrl>
     <PackageProjectUrl>https://github.com/cittaz/Assert</PackageProjectUrl>
     <PackageId>PAssert</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
