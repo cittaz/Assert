@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace PAssert;
 
-public static class PAssert
+public static class Assert
 {
     public static void Ensure(
             [DoesNotReturnIf(false)] bool condition,
